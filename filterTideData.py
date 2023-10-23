@@ -57,8 +57,6 @@ for item in data:
 
     output.append(output_obj)
 
-# print(output)
-
 # send to output file - overwrites file
 with open(output_file_path, 'w') as out_file:
     
@@ -74,6 +72,5 @@ with open(output_file_path, 'w') as out_file:
         for column in columns_to_grab:
             line_data.append(obj[column])
 
-        #write line
-        # out_file.write()
+        # write line
         write_line(output_spacing_str.join(line_data), out_file)
